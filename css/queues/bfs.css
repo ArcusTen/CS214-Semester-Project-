@@ -1,0 +1,62 @@
+:root {
+	--myGreen: #64e7b0;
+}
+
+html, * {
+    box-sizing: border-box;
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: rgb(20, 20, 20);
+    overflow: auto; /* Enable scrolling on the root element */
+}
+
+body {
+    text-align: center;
+}
+
+input {
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: bolder;
+    /* outline: 1px solid var(--myGreen); */
+    background-color: lightgrey;
+}
+
+.grid {
+    position: relative;
+    background: black;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p:nth-child(1) {
+    padding: 10px;
+    text-align: center;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+p > span {
+    text-transform: uppercase;
+    color: white;
+    font-size: larger;
+}
+.head__button {
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: bolder;
+    outline: 1px solid var(--myGreen);
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+.head__button:hover {
+    background: yellow;
+}

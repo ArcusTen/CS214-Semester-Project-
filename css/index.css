@@ -1,0 +1,114 @@
+:root {
+	--myGreen: #64e7b0;
+}
+
+html, * {
+	font-family: poppins;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+#main {
+	min-height: 100vh;
+	background: rgb(20, 20, 20);
+	overflow: hidden;
+}
+
+.main__heading {
+	background: var(--myGreen);
+	box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.3);
+	border-radius: 0 0 20px 0px;
+	font-family: poppins;
+	font-weight: bolder;
+	font-size: 30px;
+	margin: auto;
+	display: flex;
+	justify-content: left;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	padding: 20px 0px;
+}
+
+
+.section {
+	overflow-y: scroll;
+	display: flex;
+	margin: auto;
+	text-align: center;
+}
+
+.badge {
+	color: black;
+	background: yellow;
+	outline: 1px solid black;
+	padding: 5px 5px;
+}
+
+.info__box:hover {
+	transform: translateY(-10px);
+	transition: 100ms linear;
+}
+
+.popup__heading {
+	font-weight: bold;
+	font-size: 23px;
+}
+
+.popup__sub__heading {
+	text-align: left;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+.popup__sub__heading > b {
+	color: gray;
+	font-weight: bolder;
+	font-size: 23px;
+}
+
+.card-body {
+	display: flex;
+	justify-content: flex-start;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+	background: var(--myGreen);
+	flex-wrap: wrap;
+}
+
+.card {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	transform: scale(0.9);
+	box-shadow: 5px -5px 5px rgba(0, 0, 0, 0.3);
+	transition: 100ms linear;
+	border-radius: 25px;
+	overflow: hidden;
+}
+
+.card:hover {
+	transform: scale(0.9) translateY(-5px);
+	transition: 100ms linear;
+}
+
+.card-img-top-parent {
+    overflow: hidden;
+	transition: 200ms linear;
+	height: 300px;
+	position: relative;
+}
+
+.card-img-top:hover {
+	transition: 200ms linear;
+	transform: scale(1.1);
+}
+
+.card__heading {
+	padding: 10px;
+	background: var(--myGreen);
+	font-weight: bolder;
+	text-transform: uppercase;
+	color: rgb(20, 20, 20);
+	font-size: 1.2rem;
+}

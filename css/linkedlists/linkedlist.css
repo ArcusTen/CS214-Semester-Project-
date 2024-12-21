@@ -1,0 +1,59 @@
+:root {
+	--myGreen: #64e7b0;
+}
+
+html, * {
+	font-family: poppins;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+html {
+    background: rgb(20, 20, 20);
+    overflow: auto;
+}
+
+
+.heading {
+    color: var(--myGreen);
+    text-align: center; 
+    margin-top: 20px;   
+    margin-bottom: 20px; 
+}
+
+.grid {
+    max-width: 600px;
+    position: relative;
+    padding: 10px;
+    margin: 50px auto;
+    outline: 2px solid var(--myGreen);
+    border-radius: 20px;
+
+}
+
+p:nth-child(1) {
+    padding: 20px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.algo {
+    display: block;
+    padding: 10px;
+    background: white;
+    margin: 10px;
+    box-shadow: -5px 10px 5px rgba(0, 0, 0, .2);
+    border-radius: 25px;
+}
+
+.algo__link {
+    text-decoration: none;
+    color: purple;
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, .3);
+}

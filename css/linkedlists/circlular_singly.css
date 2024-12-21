@@ -1,0 +1,89 @@
+:root {
+	--myGreen: #64e7b0;
+}
+
+html, * {
+    box-sizing: border-box;
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    background: rgb(20, 20, 20);
+    overflow: auto; 
+}
+
+body {
+    text-align: center;
+}
+
+.heading {
+    color: var(--myGreen);
+    text-align: center; 
+    margin-top: 20px;   
+    margin-bottom: 20px;
+}
+
+.grid {
+    width: 1000px;
+    position: relative;
+    height: 400px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    outline: 2px solid white;
+}
+
+p:nth-child(1) {
+    padding: 20px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: gray;
+}
+
+.controllers > button {
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.insert__details {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 20px;
+    background: lightgreen;
+}
+.insert__details > * {
+    padding: 10px;
+}
+
+.insert__details label {
+    font-weight: bold;
+}
+
+.insert__submit > button, .insert__details input, .delete__submit > button {
+    padding: 10px;
+}
+
+.arr__insert, .arr__delete {
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: bolder;
+    outline: 1px solid var(--myGreen);
+    background-color: lightgrey;
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+span {
+    color: gray;
+    padding: 10px 20px;
+    background: transparent;    
+}
