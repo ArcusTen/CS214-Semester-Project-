@@ -49,11 +49,32 @@ function create_array() {
 function add_listeners() {
     document.querySelector(".arr__insert").addEventListener("click", () => {
         insert_animation();
-    })
+    });
     document.querySelector(".arr__delete").addEventListener("click", () => {
         delete_animation();
-    })
+    });
+    document.querySelector(".arr__remove-middle").addEventListener("click", () => {
+        remove_middle_animation();
+    });
 }
+
+function remove_middle_animation() {
+    if (ll.length <= 2) {
+        alert("No middle elements to remove. The list must have at least 3 elements.");
+        return;
+    }
+
+    // Calculate the middle index
+    const middleIndex = Math.floor((ll.length - 1) / 2);
+
+    // Remove the middle element
+    ll.splice(middleIndex, 1);
+
+    // Update the visualization
+    create_array(); // Redraw the array visualization
+    createSinglyLinkedList(ll); // Redraw the linked list
+}
+
 
 function insert_animation() {
     pos++;
